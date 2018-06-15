@@ -30,15 +30,21 @@ public class LogicTest {
 
         assertTrue(Logic.check("()dsf()sfd((}}}}{))", Type.ROUND));
     }
-
+    
     @Test
     public void check5() {
+
+        assertTrue(Logic.check("(()dsf()sfd((}}}}{)))", Type.ROUND));
+    }
+
+    @Test
+    public void check6() {
 
         assertFalse(Logic.check("]{{}}[[]", Type.SQUARE));
     }
 
     @Test
-    public void check6() {
+    public void check7() {
 
         assertTrue(Logic.check("<><<<>>><><<>>", Type.TRIANGLE));
     }
